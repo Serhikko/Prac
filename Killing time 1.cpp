@@ -7,29 +7,34 @@ using namespace std;
 
 int main()
 {
-    bool friendLate ;
-    double change ;
+    bool friendLate;
+    double change;
 
-//friend is late?
+    //friend is late?
 
-cout<<"is your friend will be late for more then 15 minutes(1-yes 0-no)\n";
-cin >> friendLate;
+    cout << "is your friend will be late for more then 15 minutes(1-yes 0-no)\n";
+    cin >> friendLate;
 
 
-if (friendLate == true)
-{
-    //if you have more than 3 pounds in chage go buy coffe othervise go around the city and walk
-    cout << "How much change do you have?\n";
-    cin >> change;
-    if (change == 3 || change >3 ){
-        cout << "go buy coffe\n";
+    if (friendLate == true)
+    {
+        //if you have more than 3 pounds in chage go buy coffe othervise go around the city and walk
+        cout << "How much change do you have?\n";
+        cin >> change;
+    
+        if (change == 3 || change >3)
+        {
+            cout << "go buy coffe\n";
+        }
+        else
+        { 
+            cout << "go for a walk\n";
+        }
     }
-    else 
-    cout << "go for a walk\n";
-}
-else if(friendLate == false){
-    //friend less then 15 min sit in the park and cry
-    cout << "sit in the park\n";
-}
+    else if (friendLate == false)
+    {
+            //friend less then 15 min sit in the park and cry
+            cout << "sit in the park\n";
+    }
 
 }
