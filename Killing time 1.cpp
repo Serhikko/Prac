@@ -1,6 +1,7 @@
-//make program with two scenarios 
-//1)friend is late for more than 15 minutes -if you have 3 or more pound in change go buy coffe else go for a walk 
-//2)Friend is going to be in less then in 15 minutes,sit in the park.
+
+// make program with two scenarios 
+// 1)friend is late for more than 15 minutes -if you have 3 or more pound in change go buy coffe else go for a walk 
+// 2)Friend is going to be in less then in 15 minutes,sit in the park.
 
 #include <iostream>
 using namespace std;
