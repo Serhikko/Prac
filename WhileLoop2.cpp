@@ -12,19 +12,29 @@ cout << "Enter a number 20" << endl;//request input
 cin >> userNum;//get input
 
 
-while (cin.fail()) //VALIDATION IF A NUMBER   need to make it like (while theNum != userNum) Invalid input
-   {//Check if user enters valid input
-    cout << "Invalid input" << endl;//output error message
-    cin.clear(); //clear bad input flag
-    cin.ignore(1000 , '\n'); //ignore input (i need to ignore from 1 to 19 and from 21 to inf)
-    cin >> userNum; //get number again
-   }
-
- while(userNum = theNum)
+while(userNum = theNum)
  {
     cout << userNum << endl;
     myNum -= 0.5;
- }
+ 
+    while (cin.fail()) //VALIDATION IF A NUMBER   need to make it like (while theNum != userNum) Invalid input
+    {//Check if user enters valid input
+        cout << "Invalid input" << endl;//output error messages
+        cin.clear(); //clear bad input flag
+        cin.ignore(1000 , '\n'); //ignore input (i need to ignore from 1 to 19 and from 21 to inf)
+        cin >> userNum; //get number again
+
+        while (theNum != userNum)
+        {
+            cout << "Invalid number" << endl;//output error message 
+            cin >> userNum; //get number again
+        }
+    }
+
+}
+
+
+ 
  
    
 
