@@ -12,9 +12,11 @@ using namespace std;
 // One named hello that outputs a welcome message which reads "Welcome to my program"
 // One named goodbye that outputs a goodbye message which reads "End of program".
 
+
+// function 
 void hello()
-{ // function 
-    cout << "Welcome to my program" << endl;
+{
+    cout << "Welcome to my program" << endl; 
 }
 
 void goodBye()
@@ -24,7 +26,8 @@ void goodBye()
 
 int main()
 {
-    hello(); // invoke function (e.g. make it run)
+    // invoke function (e.g. make it run)
+    hello(); 
     goodBye();
     
 
