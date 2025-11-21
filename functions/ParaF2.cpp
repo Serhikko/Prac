@@ -6,11 +6,13 @@
 #include <string>
 using namespace std;
 
-void bioFunc(string fname, int age, string fplace) {
+void bioFunc(string fname, int age, string fplace) 
+{
   cout << "Hello my name is " << fname << " I am " << age << " years old and i like " << fplace ;
 }
 
-int main() {
+int main() 
+{
   bioFunc("Jake", 34 , "Arvil Lavigne");
   return 0;
 }
