@@ -20,14 +20,14 @@ int calculation(int userInput1, int userInput2)
 
 int main()
 {
-    int userInput1;
-    int userInput2;
+    int userInput1, userInput2;
+
     cout << "Please enter a first number you wwant to multiply" << endl;
     cin >> userInput1;
     cout << "Please enter a second number you wwant to multiply" << endl; 
     cin >> userInput2;
 
 
-    cout << "the reuslt is = " << calculation(userInput1,userInput2);
+    cout << "the reuslt is = " << calculation(userInput1, userInput2);
     return 0;
 }
