@@ -23,23 +23,23 @@ using namespace std;
 
 void calulations()
 {
-    if(choice == 1)
-    {
-        total = num1 + num2;
-    }
-    else if(choice == 2)
-    {
-        total = num1 - num2;
-    }
-    else if(choice == 3)
-    {
-        total = num1 / num2;
-    }
-    else if(choice == 4)
-    {
-        total = num1 * num2;
-    }
-    
+ 
+switch (choice) 
+{
+  case 1:
+    total = num1 + num2;
+    break;
+  case 2:
+    total = num1 - num2;
+    break;
+  case 3:
+    total = num1 / num2;
+    break;
+  case 4:
+    total = num1 * num2;
+    break;
+}
+
     cout << "Result" << endl;
     cout << "---------------------" << endl;
     cout << total << endl;
